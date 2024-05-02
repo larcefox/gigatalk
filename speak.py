@@ -38,8 +38,12 @@ class PlaySound():
         
     def play_sound(self, sound) -> None:
         logger.info("Проигрываем ответ.")
-        song = AudioSegment.from_file(sound, format="mp3")
-        play(song)
+        try:
+            song = AudioSegment.from_file(sound, format="mp3")
+            play(song)
+        except FileNotFoundError as e:
+            print('File not found.')
+            print(e)
   
 if __name__ == "__main__":
     
