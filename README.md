@@ -11,3 +11,4 @@ RqUID and Authorization you can get on https://developers.sber.ru
 It requires to register by phone number or SberID.
 
 Also you can have troubles with ffmpeg, I ran it on Windows, for Linux it needs to adopt.
+FFMPEG to download - https://ffmpeg.org/download.html
